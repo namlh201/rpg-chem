@@ -1,0 +1,109 @@
+# depslib dependency file v1.0
+1551525451 source:c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\init.cpp
+	"init.h"
+
+1551464650 c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\init.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	"variable.h"
+
+1551464650 source:c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\loadmedia.cpp
+	"loadMedia.h"
+
+1551464650 c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\loadmedia.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	"loadTexture.h"
+	"variable.h"
+
+1551464650 c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\loadtexture.h
+	<bits/stdc++.h>
+	<SDL_image.h>
+	<SDL.h>
+	"variable.h"
+
+1551464650 source:c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\loadtexture.cpp
+	"loadTexture.h"
+
+1551524922 source:c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\main.cpp
+	"init.h"
+	"close.h"
+	"loadTexture.h"
+	"loadMedia.h"
+	<SDL.h>
+	"variable.h"
+
+1551464650 c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\close.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	"variable.h"
+
+1551464650 source:c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\close.cpp
+	"close.h"
+
+1551526525 c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\variable.h
+	<SDL.h>
+	<SDL_image.h>
+
+1551525533 source:c:\users\namlh201\onedrive\desktop\int2202\rpg-chem\variable.cpp
+	"variable.h"
+	<SDL.h>
+	<SDL_image.h>
+
+1551464650 source:d:\git\rpg-chem\close.cpp
+	"close.h"
+
+1551464650 d:\git\rpg-chem\close.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	"variable.h"
+
+1551526525 d:\git\rpg-chem\variable.h
+	<SDL.h>
+	<SDL_image.h>
+
+1551525451 source:d:\git\rpg-chem\init.cpp
+	"init.h"
+
+1551464650 d:\git\rpg-chem\init.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	"variable.h"
+
+1551464650 source:d:\git\rpg-chem\loadmedia.cpp
+	"loadMedia.h"
+
+1551464650 d:\git\rpg-chem\loadmedia.h
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	"loadTexture.h"
+	"variable.h"
+
+1551464650 d:\git\rpg-chem\loadtexture.h
+	<bits/stdc++.h>
+	<SDL_image.h>
+	<SDL.h>
+	"variable.h"
+
+1551464650 source:d:\git\rpg-chem\loadtexture.cpp
+	"loadTexture.h"
+
+1551524922 source:d:\git\rpg-chem\main.cpp
+	"init.h"
+	"close.h"
+	"loadTexture.h"
+	"loadMedia.h"
+	<SDL.h>
+	"variable.h"
+
+1551526525 source:d:\git\rpg-chem\variable.cpp
+	"variable.h"
+	<SDL.h>
+	<SDL_image.h>
+
