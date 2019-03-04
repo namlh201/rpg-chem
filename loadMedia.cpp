@@ -7,7 +7,7 @@ bool loadMedia() {
     bool success = true;
 
     // Load PNG texture
-    gTexture = loadTexture(PATH/*, gRenderer*/);
+    gTexture = loadTexture(PATH);
     if (gTexture == NULL) {
         printf("Failed to load texture image.\nError: %s\n", SDL_GetError());
         success = false;
