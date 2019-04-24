@@ -53,20 +53,21 @@
 	<SDL.h>
 	<SDL_image.h>
 
-1551464650 source:d:\git\rpg-chem\close.cpp
+1552310984 source:d:\git\rpg-chem\close.cpp
 	"close.h"
 
-1551464650 d:\git\rpg-chem\close.h
+1552308234 d:\git\rpg-chem\close.h
 	<bits/stdc++.h>
 	<SDL.h>
 	<SDL_image.h>
 	"variable.h"
 
-1551526525 d:\git\rpg-chem\variable.h
+1552311597 d:\git\rpg-chem\variable.h
 	<SDL.h>
 	<SDL_image.h>
+	"loadTexture.h"
 
-1551525451 source:d:\git\rpg-chem\init.cpp
+1552307176 source:d:\git\rpg-chem\init.cpp
 	"init.h"
 
 1551464650 d:\git\rpg-chem\init.h
@@ -75,35 +76,561 @@
 	<SDL_image.h>
 	"variable.h"
 
-1551464650 source:d:\git\rpg-chem\loadmedia.cpp
+1552307580 source:d:\git\rpg-chem\loadmedia.cpp
 	"loadMedia.h"
 
-1551464650 d:\git\rpg-chem\loadmedia.h
+1552308234 d:\git\rpg-chem\loadmedia.h
 	<bits/stdc++.h>
 	<SDL.h>
 	<SDL_image.h>
 	"loadTexture.h"
-	"variable.h"
 
-1551464650 d:\git\rpg-chem\loadtexture.h
+1552311257 d:\git\rpg-chem\loadtexture.h
 	<bits/stdc++.h>
 	<SDL_image.h>
 	<SDL.h>
 	"variable.h"
 
-1551464650 source:d:\git\rpg-chem\loadtexture.cpp
+1552308172 source:d:\git\rpg-chem\loadtexture.cpp
 	"loadTexture.h"
 
-1551524922 source:d:\git\rpg-chem\main.cpp
+1552308041 source:d:\git\rpg-chem\main.cpp
 	"init.h"
 	"close.h"
 	"loadTexture.h"
 	"loadMedia.h"
 	<SDL.h>
 	"variable.h"
+	"element.h"
+	"periodicTable.h"
 
-1551526525 source:d:\git\rpg-chem\variable.cpp
+1552354875 source:d:\git\rpg-chem\variable.cpp
 	"variable.h"
 	<SDL.h>
 	<SDL_image.h>
+
+1552233579 source:d:\git\rpg-chem\periodictable.cpp
+	"periodicTable.h"
+
+1552068522 source:d:\git\rpg-chem\element.cpp
+	"element.h"
+
+1552068507 d:\git\rpg-chem\element.h
+	<bits/stdc++.h>
+
+1552233579 d:\git\rpg-chem\periodictable.h
+	<bits/stdc++.h>
+	"element.h"
+
+1552305005 source:d:\git\rpg-chem\character.cpp
+	"character.h"
+
+1552305005 d:\git\rpg-chem\character.h
+	<bits/stdc++.h>
+	<SDL.h>
+
+1552306852 d:\git\rpg-chem\variable.cpp
+	"variable.h"
+	<SDL.h>
+	<SDL_image.h>
+
+1556102871 source:d:\git\rpg-chem\rpg-chem\main.cpp
+	"Main.h"
+
+1556092217 d:\git\rpg-chem\rpg-chem\main.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+	"mainCharacter.h"
+	"StartScreen.h"
+	"Map.h"
+	"PeriodicTable.h"
+	"PopUp.h"
+	"Music.h"
+	"Sound.h"
+
+1555253431 d:\git\rpg-chem\rpg-chem\stdafx.h
+	<bits/stdc++.h>
+	<thread>
+	<chrono>
+	<SDL.h>
+	<SDL_mixer.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1555930827 d:\git\rpg-chem\rpg-chem\sdl_setup.h
+	"stdafx.h"
+
+1555511543 source:d:\git\rpg-chem\rpg-chem\mainprogram.cpp
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Main.h"
+
+1555930845 source:d:\git\rpg-chem\rpg-chem\sdl_setup.cpp
+	"SDL_Setup.h"
+
+1555930642 d:\git\rpg-chem\rpg-chem\sprite.h
+	"stdafx.h"
+
+1556123092 source:d:\git\rpg-chem\rpg-chem\sprite.cpp
+	"Sprite.h"
+
+1555930421 d:\git\rpg-chem\rpg-chem\maincharacter.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+
+1556121707 source:d:\git\rpg-chem\rpg-chem\maincharacter.cpp
+	"mainCharacter.h"
+
+1556123769 d:\git\rpg-chem\rpg-chem\startscreen.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+	"Sound.h"
+
+1556124001 source:d:\git\rpg-chem\rpg-chem\startscreen.cpp
+	"StartScreen.h"
+
+1556124336 d:\git\rpg-chem\rpg-chem\map.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+	"mainCharacter.h"
+	"PeriodicTable.h"
+	"PopUp.h"
+
+1556125051 source:d:\git\rpg-chem\rpg-chem\map.cpp
+	"Map.h"
+
+1554629056 d:\git\rpg-chem\rpg-chem\tree.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+
+1555339999 source:d:\git\rpg-chem\rpg-chem\tree.cpp
+	"Tree.h"
+
+1554109544 source:d:\git\rpg-chem\rpg-chem\fence.cpp
+
+1554129000 source:d:\git\rpg-chem\rpg-chem\elementball.cpp
+	"ElementBall.h"
+
+1554110030 d:\git\rpg-chem\rpg-chem\elementball.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+
+1554133672 d:\git\rpg-chem\rpg-chem\portal.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+
+1554133485 source:d:\git\rpg-chem\rpg-chem\portal.cpp
+	"Portal.h"
+
+1554228453 source:d:\git\rpg-chem\rpg-chem\element.cpp
+	"Element.h"
+
+1554228453 d:\git\rpg-chem\rpg-chem\element.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+
+1556029733 d:\git\rpg-chem\rpg-chem\periodictable.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+	"Sound.h"
+
+1556122950 source:d:\git\rpg-chem\rpg-chem\periodictable.cpp
+	"PeriodicTable.h"
+
+1554451808 source:d:\git\rpg-chem\rpg-chem\maps\starting house\barrel.cpp
+	"Barrel.h"
+
+1554447436 d:\git\rpg-chem\rpg-chem\maps\starting house\barrel.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554559396 source:d:\git\rpg-chem\rpg-chem\maps\starting house\bed.cpp
+	"Bed.h"
+
+1554530574 d:\git\rpg-chem\rpg-chem\maps\starting house\bed.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554531228 source:d:\git\rpg-chem\rpg-chem\maps\starting house\bedroomtableset.cpp
+	"BedroomTableSet.h"
+
+1554451783 d:\git\rpg-chem\rpg-chem\maps\starting house\bedroomtableset.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554450936 source:d:\git\rpg-chem\rpg-chem\maps\starting house\bedside.cpp
+	"BedSide.h"
+
+1554450939 d:\git\rpg-chem\rpg-chem\maps\starting house\bedside.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554455719 source:d:\git\rpg-chem\rpg-chem\maps\starting house\bottomleftkitchen.cpp
+	"BottomLeftKitchen.h"
+
+1554455721 d:\git\rpg-chem\rpg-chem\maps\starting house\bottomleftkitchen.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554559502 source:d:\git\rpg-chem\rpg-chem\maps\starting house\diningtable.cpp
+	"DiningTable.h"
+
+1554531822 d:\git\rpg-chem\rpg-chem\maps\starting house\diningtable.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554448071 source:d:\git\rpg-chem\rpg-chem\maps\starting house\downchair.cpp
+	"DownChair.h"
+
+1554448071 d:\git\rpg-chem\rpg-chem\maps\starting house\downchair.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554471559 source:d:\git\rpg-chem\rpg-chem\maps\starting house\frontwall.cpp
+	"FrontWall.h"
+
+1554453472 d:\git\rpg-chem\rpg-chem\maps\starting house\frontwall.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554447932 source:d:\git\rpg-chem\rpg-chem\maps\starting house\leftchair.cpp
+	"LeftChair.h"
+
+1554447932 d:\git\rpg-chem\rpg-chem\maps\starting house\leftchair.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554455387 source:d:\git\rpg-chem\rpg-chem\maps\starting house\leftkitchen.cpp
+	"LeftKitchen.h"
+
+1554455387 d:\git\rpg-chem\rpg-chem\maps\starting house\leftkitchen.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554455147 source:d:\git\rpg-chem\rpg-chem\maps\starting house\leftsinkkitchen.cpp
+	"LeftSinkKitchen.h"
+
+1554455150 d:\git\rpg-chem\rpg-chem\maps\starting house\leftsinkkitchen.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554533638 source:d:\git\rpg-chem\rpg-chem\maps\starting house\leftsofa.cpp
+	"LeftSofa.h"
+
+1554531106 d:\git\rpg-chem\rpg-chem\maps\starting house\leftsofa.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554532859 source:d:\git\rpg-chem\rpg-chem\maps\starting house\livingtable.cpp
+	"LivingTable.h"
+
+1554532859 d:\git\rpg-chem\rpg-chem\maps\starting house\livingtable.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554401945 source:d:\git\rpg-chem\rpg-chem\maps\starting house\lefttorch.cpp
+	"LeftTorch.h"
+
+1554471207 d:\git\rpg-chem\rpg-chem\maps\starting house\lefttorch.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554531998 source:d:\git\rpg-chem\rpg-chem\maps\starting house\piano.cpp
+	"Piano.h"
+
+1554531998 d:\git\rpg-chem\rpg-chem\maps\starting house\piano.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554471218 source:d:\git\rpg-chem\rpg-chem\maps\starting house\painting.cpp
+	"Painting.h"
+
+1554447436 d:\git\rpg-chem\rpg-chem\maps\starting house\painting.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554448425 source:d:\git\rpg-chem\rpg-chem\maps\starting house\rightchair.cpp
+	"RightChair.h"
+
+1554448425 d:\git\rpg-chem\rpg-chem\maps\starting house\rightchair.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554471229 source:d:\git\rpg-chem\rpg-chem\maps\starting house\plant.cpp
+	"Plant.h"
+
+1554447436 d:\git\rpg-chem\rpg-chem\maps\starting house\plant.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554453726 source:d:\git\rpg-chem\rpg-chem\maps\starting house\sidewall.cpp
+	"SideWall.h"
+
+1554453728 d:\git\rpg-chem\rpg-chem\maps\starting house\sidewall.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554401945 source:d:\git\rpg-chem\rpg-chem\maps\starting house\righttorch.cpp
+	"RightTorch.h"
+
+1554471237 d:\git\rpg-chem\rpg-chem\maps\starting house\righttorch.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554447932 source:d:\git\rpg-chem\rpg-chem\maps\starting house\upchair.cpp
+	"UpChair.h"
+
+1554447772 d:\git\rpg-chem\rpg-chem\maps\starting house\upchair.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554454872 source:d:\git\rpg-chem\rpg-chem\maps\starting house\topleftkitchen.cpp
+	"TopLeftKitchen.h"
+
+1554471244 d:\git\rpg-chem\rpg-chem\maps\starting house\topleftkitchen.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554536462 source:d:\git\rpg-chem\rpg-chem\maps\starting house\blankhang.cpp
+	"BlankHang.h"
+
+1554536462 d:\git\rpg-chem\rpg-chem\maps\starting house\blankhang.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554534778 source:d:\git\rpg-chem\rpg-chem\maps\starting house\leftbench.cpp
+	"LeftBench.h"
+
+1554534778 d:\git\rpg-chem\rpg-chem\maps\starting house\leftbench.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554535069 source:d:\git\rpg-chem\rpg-chem\maps\starting house\midbench.cpp
+	"MidBench.h"
+
+1554535069 d:\git\rpg-chem\rpg-chem\maps\starting house\midbench.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554532541 source:d:\git\rpg-chem\rpg-chem\maps\starting house\rightsofa.cpp
+	"RightSofa.h"
+
+1554532075 d:\git\rpg-chem\rpg-chem\maps\starting house\rightsofa.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554537399 source:d:\git\rpg-chem\rpg-chem\maps\starting house\stuffedhang.cpp
+	"StuffedHang.h"
+
+1554537399 d:\git\rpg-chem\rpg-chem\maps\starting house\stuffedhang.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1554559576 source:d:\git\rpg-chem\rpg-chem\maps\starting house\rightbench.cpp
+	"RightBench.h"
+
+1554535552 d:\git\rpg-chem\rpg-chem\maps\starting house\rightbench.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1555930740 source:d:\git\rpg-chem\rpg-chem\npc.cpp
+	"NPC.h"
+
+1555930740 d:\git\rpg-chem\rpg-chem\npc.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+
+1555254473 source:d:\git\rpg-chem\rpg-chem\monster.cpp
+	"Monster.h"
+
+1555254462 d:\git\rpg-chem\rpg-chem\monster.h
+	"NPC.h"
+	"mainCharacter.h"
+	"Stat.h"
+
+1556123092 source:d:\git\rpg-chem\rpg-chem\popup.cpp
+	"PopUp.h"
+
+1556092218 d:\git\rpg-chem\rpg-chem\popup.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+	"PeriodicTable.h"
+	"Sound.h"
+
+1554998415 d:\git\rpg-chem\rpg-chem\stat.h
+
+1555346502 d:\git\rpg-chem\rpg-chem\maps\starting area\house.h
+	"../../stdafx.h"
+	"../../SDL_Setup.h"
+	"../../Sprite.h"
+
+1555341455 source:d:\git\rpg-chem\rpg-chem\maps\starting area\house.cpp
+	"House.h"
+
+1555930367 d:\git\rpg-chem\rpg-chem\sound.h
+	"stdafx.h"
+	"Audio.h"
+
+1555930367 source:d:\git\rpg-chem\rpg-chem\sound.cpp
+	"Sound.h"
+
+1555930367 d:\git\rpg-chem\rpg-chem\music.h
+	"stdafx.h"
+	"Audio.h"
+
+1555930547 d:\git\rpg-chem\rpg-chem\audio.h
+	"stdafx.h"
+
+1555929685 source:d:\git\rpg-chem\rpg-chem\audio.cpp
+	"Audio.h"
+
+1555930367 source:d:\git\rpg-chem\rpg-chem\music.cpp
+	"Music.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\audio.cpp
+	"../include/Audio.h"
+
+1556125915 d:\git\rpg-chem\rpg-chem\include\audio.h
+	"stdafx.h"
+
+1555253431 d:\git\rpg-chem\rpg-chem\include\stdafx.h
+	<bits/stdc++.h>
+	<thread>
+	<chrono>
+	<SDL.h>
+	<SDL_mixer.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\main.cpp
+	"../include/Main.h"
+
+1556092217 d:\git\rpg-chem\rpg-chem\include\main.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+	"mainCharacter.h"
+	"StartScreen.h"
+	"Map.h"
+	"PeriodicTable.h"
+	"PopUp.h"
+	"Music.h"
+	"Sound.h"
+
+1555930827 d:\git\rpg-chem\rpg-chem\include\sdl_setup.h
+	"stdafx.h"
+
+1555930642 d:\git\rpg-chem\rpg-chem\include\sprite.h
+	"stdafx.h"
+
+1555930421 d:\git\rpg-chem\rpg-chem\include\maincharacter.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+
+1556123769 d:\git\rpg-chem\rpg-chem\include\startscreen.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+	"Sound.h"
+
+1555930367 d:\git\rpg-chem\rpg-chem\include\sound.h
+	"stdafx.h"
+	"Audio.h"
+
+1556124336 d:\git\rpg-chem\rpg-chem\include\map.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+	"mainCharacter.h"
+	"PeriodicTable.h"
+	"PopUp.h"
+
+1556029733 d:\git\rpg-chem\rpg-chem\include\periodictable.h
+	"stdafx.h"
+	"SDL_Setup.h"
+	"Sprite.h"
+	"Sound.h"
+
+1556092218 d:\git\rpg-chem\rpg-chem\include\popup.h
+	"stdafx.h"
+	"Sprite.h"
+	"SDL_Setup.h"
+	"PeriodicTable.h"
+	"Sound.h"
+
+1555930367 d:\git\rpg-chem\rpg-chem\include\music.h
+	"stdafx.h"
+	"Audio.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\maincharacter.cpp
+	"../include/mainCharacter.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\mainprogram.cpp
+	"../include/stdafx.h"
+	"../include/SDL_Setup.h"
+	"../include/Main.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\map.cpp
+	"../include/Map.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\music.cpp
+	"../include/Music.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\periodictable.cpp
+	"../include/PeriodicTable.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\popup.cpp
+	"../include/PopUp.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\sdl_setup.cpp
+	"../include/SDL_Setup.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\sound.cpp
+	"../include/Sound.h"
+
+1556126051 source:d:\git\rpg-chem\rpg-chem\source\sprite.cpp
+	"../include/Sprite.h"
+
+1556126050 source:d:\git\rpg-chem\rpg-chem\source\startscreen.cpp
+	"../include/StartScreen.h"
 

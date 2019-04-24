@@ -31,16 +31,30 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../close.cpp" />
-		<Unit filename="../close.h" />
-		<Unit filename="../init.cpp" />
-		<Unit filename="../init.h" />
-		<Unit filename="../loadMedia.cpp" />
-		<Unit filename="../loadMedia.h" />
-		<Unit filename="../loadTexture.cpp" />
-		<Unit filename="../loadTexture.h" />
-		<Unit filename="../main.cpp" />
-		<Unit filename="../variable.cpp" />
+		<Unit filename="include/Audio.h" />
+		<Unit filename="include/Main.h" />
+		<Unit filename="include/Map.h" />
+		<Unit filename="include/Music.h" />
+		<Unit filename="include/PeriodicTable.h" />
+		<Unit filename="include/PopUp.h" />
+		<Unit filename="include/SDL_Setup.h" />
+		<Unit filename="include/Sound.h" />
+		<Unit filename="include/Sprite.h" />
+		<Unit filename="include/StartScreen.h" />
+		<Unit filename="include/mainCharacter.h" />
+		<Unit filename="include/stdafx.h" />
+		<Unit filename="source/Audio.cpp" />
+		<Unit filename="source/Main.cpp" />
+		<Unit filename="source/Map.cpp" />
+		<Unit filename="source/Music.cpp" />
+		<Unit filename="source/PeriodicTable.cpp" />
+		<Unit filename="source/PopUp.cpp" />
+		<Unit filename="source/SDL_Setup.cpp" />
+		<Unit filename="source/Sound.cpp" />
+		<Unit filename="source/Sprite.cpp" />
+		<Unit filename="source/StartScreen.cpp" />
+		<Unit filename="source/mainCharacter.cpp" />
+		<Unit filename="source/mainProgram.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
