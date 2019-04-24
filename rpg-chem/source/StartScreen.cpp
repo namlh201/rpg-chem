@@ -62,7 +62,6 @@ StartScreen::~StartScreen()
     delete startScreen;
 
     TTF_CloseFont(font);
-    delete font;
 
     SDL_FreeSurface(newGameSurf);
     SDL_FreeSurface(continueSurf);

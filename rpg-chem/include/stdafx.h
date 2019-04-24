@@ -1,7 +1,13 @@
 #ifndef STDAFX_H
 #define STDAFX_H
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <map>
+#include <vector>
+#include <utility>
+#include <algorithm>
 #include <thread>
 #include <chrono>
 #include <SDL.h>

@@ -137,7 +137,6 @@ PeriodicTable::~PeriodicTable()
     delete element_info_bg;
 
     TTF_CloseFont(text_font);
-    delete text_font;
 
     SDL_FreeSurface(info_text_surface);
     SDL_DestroyTexture(info_text_texture);

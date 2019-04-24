@@ -13,12 +13,6 @@ SDL_Setup::SDL_Setup(bool* quit, const int& _SCREEN_WIDTH, const int& _SCREEN_HE
     if (window == NULL)
         *quit = true;
 
-    icon = NULL;                            // App icon
-    icon = IMG_Load("icon.png");
-
-    // The icon is attached to the window pointer
-    SDL_SetWindowIcon(window, icon);
-
     renderer = NULL;
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     if (renderer == NULL) std::cout << "Failed to create renderer." << std::endl;
@@ -32,10 +26,7 @@ SDL_Setup::~SDL_Setup()                     // dtor
     SDL_DestroyRenderer(renderer);
     delete main_event;
 
-    SDL_FreeSurface(icon);
-
     TTF_CloseFont(font);
-    delete font;
 
     TTF_Quit();
     IMG_Quit();

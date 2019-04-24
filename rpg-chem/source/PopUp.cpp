@@ -38,8 +38,6 @@ PopUp::~PopUp()
 
     TTF_CloseFont(text_font_36);
     TTF_CloseFont(text_font_20);
-    delete text_font_36;
-    delete text_font_20;
 
     SDL_FreeSurface(pop_up_text_surface);
     SDL_DestroyTexture(pop_up_text_texture);

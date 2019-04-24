@@ -81,6 +81,8 @@ Map::~Map()
     delete portal_to_previous_stage;
     delete portal_to_next_stage;
 
+    TTF_CloseFont(text_font);
+
     delete e_button;
     SDL_FreeSurface(open_pt_surface);
     SDL_DestroyTexture(open_pt_texture);

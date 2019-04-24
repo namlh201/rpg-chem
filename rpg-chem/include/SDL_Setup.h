@@ -10,8 +10,6 @@ protected:
     SDL_Renderer* renderer;         // Renderer to be updated
     SDL_Event* main_event;           // Event to be updated
 
-    SDL_Surface *icon;              // App icon
-
     TTF_Font* font;
 
 public:
