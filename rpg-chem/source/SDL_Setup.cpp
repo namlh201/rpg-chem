@@ -26,8 +26,6 @@ SDL_Setup::~SDL_Setup()                     // dtor
     SDL_DestroyRenderer(renderer);
     delete main_event;
 
-    TTF_CloseFont(font);
-
     TTF_Quit();
     IMG_Quit();
     SDL_Quit();

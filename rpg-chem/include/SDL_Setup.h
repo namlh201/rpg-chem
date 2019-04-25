@@ -10,8 +10,6 @@ protected:
     SDL_Renderer* renderer;         // Renderer to be updated
     SDL_Event* main_event;           // Event to be updated
 
-    TTF_Font* font;
-
 public:
     SDL_Setup(bool* quit, const int& _SCREEN_WIDTH, const int& _SCREEN_HEIGHT,
               const std::string& _PROGRAM_TITLE);
@@ -19,8 +17,6 @@ public:
 
     SDL_Renderer* GetRenderer() { return renderer; };
     SDL_Event* GetEvent() { return main_event; };
-
-    TTF_Font* GetFont() { return font; };
 
     void Begin();                   // To reset renderer every game loop
     void End();                     // To render after every update

@@ -25,8 +25,10 @@ PopUp::PopUp(SDL_Setup* _sdl_setup, PeriodicTable* _periodic_table)
 
     element_found_image = NULL;
 
-    prompt_text_surface = NULL;
-    prompt_text_texture = NULL;
+    std::string PROMPT = "Press Enter to continue";
+    prompt_text_surface = TTF_RenderText_Blended(text_font_20, PROMPT.c_str(), text_colour);
+    prompt_text_rect = {(1024 - prompt_text_surface->w) / 2, 385, prompt_text_surface->w, prompt_text_surface->h};
+    prompt_text_texture = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), prompt_text_surface);
 }
 
 PopUp::~PopUp()
@@ -49,21 +51,13 @@ PopUp::~PopUp()
 void PopUp::FoundElement(const int& _Z)
 {
     std::string TEXT;
+    std::string name = periodic_table->element.at(_Z);
 
-    if (_Z > 0) {
-        std::string name = periodic_table->element.at(_Z);
-
-        TEXT = "Congratulations!\n\n\nYou've found " + name + ".";
-    }
+    TEXT = "Congratulations!\n\n\nYou've found " + name + ".";
 
     pop_up_text_surface = TTF_RenderText_Blended_Wrapped(text_font_36, TEXT.c_str(), text_colour, 424);
     pop_up_text_rect = {(1024 - pop_up_text_surface->w) / 2, 285, pop_up_text_surface->w, pop_up_text_surface->h};
     pop_up_text_texture = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), pop_up_text_surface);
-
-    std::string PROMPT = "Press Enter to continue";
-    prompt_text_surface = TTF_RenderText_Blended(text_font_20, PROMPT.c_str(), text_colour);
-    prompt_text_rect = {(1024 - prompt_text_surface->w) / 2, 385, prompt_text_surface->w, prompt_text_surface->h};
-    prompt_text_texture = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), prompt_text_surface);
 }
 
 void PopUp::RenderPopUp(const int& _Z)
@@ -73,6 +67,9 @@ void PopUp::RenderPopUp(const int& _Z)
     FoundElement(_Z);
     SDL_RenderCopy(sdl_setup->GetRenderer(), pop_up_text_texture, NULL, &pop_up_text_rect);
     SDL_RenderCopy(sdl_setup->GetRenderer(), prompt_text_texture, NULL, &prompt_text_rect);
+
+    SDL_FreeSurface(pop_up_text_surface); pop_up_text_surface = NULL;
+    SDL_DestroyTexture(pop_up_text_texture); pop_up_text_texture = NULL;
 
     element_found_image = periodic_table->GetElementImage(_Z);
     element_found_image->set_w(100); element_found_image->set_h(100);

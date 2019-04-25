@@ -16,8 +16,6 @@ protected:
     TTF_Font* text_font;                                            // Font
     SDL_Color text_colour;                                          // White
 
-    int found_element_count;
-
     /*
      * Periodic Table
      */
@@ -45,10 +43,14 @@ protected:
     void UpdateTable();                                             // Update cursor
 
     Sprite* escape;
-
     SDL_Rect return_to_game_rect;
     SDL_Surface* return_to_game_surface;
     SDL_Texture* return_to_game_texture;
+
+    Sprite* enter;
+    SDL_Rect read_info_rect;
+    SDL_Surface* read_info_surface;
+    SDL_Texture* read_info_texture;
 
     Sound* cursor_sound;
     Sound* choose_sound;
@@ -102,9 +104,6 @@ public:
     void SetDefault();
 
     void FoundElement(const int& _Z);
-
-    int FoundElementCount() { return found_element_count; };
-    void IncreaseFoundElementCount() { found_element_count++; };
 
     std::map<int, std::string> element;                             // Each element's atomic number and name
 

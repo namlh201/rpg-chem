@@ -17,34 +17,27 @@ StartScreen::StartScreen(SDL_Setup* _sdl_setup)
     text_colour = {10, 108, 219};
 
     cursorRect = {312, 250, 400, 100};
-    cursor = NULL;
     cursor = IMG_LoadTexture(sdl_setup->GetRenderer(), "Sprites/Start Screen/Cursor.png");
     cropCursor.x = 0;
     cropCursor.y = 0;
     SDL_QueryTexture(cursor, NULL, NULL, &cropCursor.w, &cropCursor.h);
 
-    newGameSurf = NULL;
     newGameSurf = TTF_RenderText_Blended(font, "New Game", text_colour);
     newGameRect = {(1024 - newGameSurf->w) / 2, 250, newGameSurf->w, newGameSurf->h};
-    newGameText = NULL;
     newGameText = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), newGameSurf);
     cropNewGameText.x = 0;
     cropNewGameText.y = 0;
     SDL_QueryTexture(newGameText, NULL, NULL, &cropNewGameText.w, &cropNewGameText.h);
 
-    continueSurf = NULL;
     continueSurf = TTF_RenderText_Blended(font, "Continue", text_colour);
     continueRect = {(1024 - continueSurf->w) / 2, 350, continueSurf->w, continueSurf->h};
-    continueText = NULL;
     continueText = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), continueSurf);
     cropContinueText.x = 0;
     cropContinueText.y = 0;
     SDL_QueryTexture(continueText, NULL, NULL, &cropContinueText.w, &cropContinueText.h);
 
-    quitSurf = NULL;
     quitSurf = TTF_RenderText_Blended(font, "Quit", text_colour);
     quitRect = {(1024 - quitSurf->w) / 2, 450, quitSurf->w, quitSurf->h};
-    quitText = NULL;
     quitText = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), quitSurf);
     cropQuitText.x = 0;
     cropQuitText.y = 0;

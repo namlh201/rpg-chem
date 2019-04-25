@@ -36,9 +36,6 @@ PeriodicTable::PeriodicTable(SDL_Setup* _sdl_setup)
     }
 
     periodic_table_bg = new Sprite(sdl_setup->GetRenderer(), "Sprites/Periodic Table/Elements/PeriodicTable_BG.jpg", 0, 0, 1024, 576);
-    //periodic_table_bg = new Sprite(sdl_setup->GetRenderer(), "Sprites/Periodic Table/Elements/BlackHole_1.jpg", 0, 0, 1024, 576);
-    //periodic_table_bg = new Sprite(sdl_setup->GetRenderer(), "Sprites/Periodic Table/Elements/BlackHole_3.jpg", 0, 0, 1024, 576);
-    //periodic_table_bg = new Sprite(sdl_setup->GetRenderer(), "Sprites/Periodic Table/Elements/BlackHole_4.jpeg", 0, 0, 1024, 576);
 
     std::string CURSOR_FILE_PATH = "Sprites/Periodic Table/cursor_1.png";
     cursor = new Sprite(sdl_setup->GetRenderer(), CURSOR_FILE_PATH, 0, 50, 70, 69);
@@ -51,11 +48,17 @@ PeriodicTable::PeriodicTable(SDL_Setup* _sdl_setup)
 
     escape = new Sprite(sdl_setup->GetRenderer(), "Sprites/Icons/esc_button.png",
                         8, 8, 40, 40);
-
     return_to_game_surface = TTF_RenderText_Blended(text_font, "Return to Game", text_colour);
     return_to_game_rect = {60, (escape->get_h() - return_to_game_surface->h) / 2 + escape->get_y(),
                            return_to_game_surface->w, return_to_game_surface->h};
     return_to_game_texture = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), return_to_game_surface);
+
+    enter = new Sprite(sdl_setup->GetRenderer(), "Sprites/Icons/enter_button.png",
+                       128, 64, 40, 40);
+    read_info_surface = TTF_RenderText_Blended(text_font, "Read Info", text_colour);
+    read_info_rect = {200, (enter->get_h() - read_info_surface->h) / 2 + enter->get_y(),
+                      read_info_surface->w, read_info_surface->h};
+    read_info_texture = SDL_CreateTextureFromSurface(sdl_setup->GetRenderer(), read_info_surface);
 
     cursor_sound = new Sound("Audio/SE/PTCursor.wav"); cursor_sound->SetVolume(24);
     choose_sound = new Sound("Audio/SE/PTChoose.wav"); choose_sound->SetVolume(16);
@@ -145,12 +148,16 @@ PeriodicTable::~PeriodicTable()
     delete choose_sound;
 
     delete escape;
+    delete enter;
     delete backspace;
     delete a_button;
     delete d_button;
 
     SDL_FreeSurface(return_to_game_surface);
     SDL_DestroyTexture(return_to_game_texture);
+
+    SDL_FreeSurface(read_info_surface);
+    SDL_DestroyTexture(read_info_texture);
 
     SDL_FreeSurface(return_to_pt_surface);
     SDL_DestroyTexture(return_to_pt_texture);
@@ -168,8 +175,6 @@ void PeriodicTable::SetDefault()
     currentCursor = std::vector<bool> (118);
 
     info = std::vector<bool> (118, false);
-
-    found_element_count = 0;
 
     SaveTable();
     LoadTable();
@@ -195,26 +200,15 @@ void PeriodicTable::FoundElement(const int& _Z)
 
 void PeriodicTable::SaveTable()
 {
-    found_element_count = 0;
-
     std::string TABLE_STATE_FILE_PATH = "Data/Periodic Table/PeriodicTableState.chem";
     std::ofstream table_state_output(TABLE_STATE_FILE_PATH);
     for (int i = 0; i < ROW; ++i) {
         for (int j = 0; j < COLUMN; ++j) {
             table_state_output << (int) foundElement.at(i).at(j).second << ' ';
-
-            if (foundElement.at(i).at(j).first != -1 && foundElement.at(i).at(j).second == true)
-                found_element_count++;
         }
         table_state_output << std::endl;
     }
     table_state_output.close();
-
-    std::string FOUND_ELEMENT_COUNT_FILE_PATH = "Data/Save/FoundElementCount.chem";
-    std::ofstream found_element_count_output(FOUND_ELEMENT_COUNT_FILE_PATH);
-    found_element_count_output << found_element_count;
-    found_element_count_output.close();
-
 }
 
 void PeriodicTable::LoadTable()
@@ -241,11 +235,6 @@ void PeriodicTable::LoadTable()
 
     table_layout_input.close();
     table_state_input.close();
-
-    std::string FOUND_ELEMENT_COUNT_FILE_PATH = "Data/Save/FoundElementCount.chem";
-    std::ifstream found_element_count_input(FOUND_ELEMENT_COUNT_FILE_PATH);
-    found_element_count_input >> found_element_count;
-    found_element_count_input.close();
 }
 
 void PeriodicTable::LoadElementName()
@@ -351,8 +340,10 @@ void PeriodicTable::RenderPeriodicTable()
         periodic_table_bg->SpriteDraw();
 
         escape->SpriteDraw();
-
         SDL_RenderCopy(sdl_setup->GetRenderer(), return_to_game_texture, NULL, &return_to_game_rect);
+
+        enter->SpriteDraw();
+        SDL_RenderCopy(sdl_setup->GetRenderer(), read_info_texture, NULL, &read_info_rect);
 
         for (int i = 0; i < ROW; ++i) {
             for (int j = 0; j < COLUMN; ++j) {

@@ -367,7 +367,7 @@ void Map::PortalCollision(MainCharacter* _main_char)
         SDL_Delay(500);
         UpdateMap(portal_to_next_stage);
         if (char_rect.x + char_rect.w >= next_portal_rect.x)
-            main_char->GetChar()->set_x(546);
+            main_char->GetChar()->set_x(545);
         if (char_rect.y + char_rect.h >= next_portal_rect.y)
             main_char->GetChar()->set_y(510);
     }
@@ -376,9 +376,9 @@ void Map::PortalCollision(MainCharacter* _main_char)
         SDL_Delay(500);
         UpdateMap(portal_to_previous_stage);
         if (char_rect.x + char_rect.w >= previous_portal_rect.x)
-            main_char->GetChar()->set_x(546);
+            main_char->GetChar()->set_x(545);
         if (char_rect.y + char_rect.h >= previous_portal_rect.y)
-            main_char->GetChar()->set_y(31);
+            main_char->GetChar()->set_y(34);
     }
 }
 
